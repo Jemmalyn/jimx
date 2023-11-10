@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jems</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url(bgg.jpg);
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-size: cover ;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-size: large;
+    }
+
+    header {
+      background-color: #333;
+      color: #f8a0a0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      text-align: right;
+      padding: 20px;
+      
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #f1efef;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px;
+      text-align: center;
+      font-family: serif;
+      font-size: 1.5em;
+      color: #f8a0a0;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    .thumb {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .thumb li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 1.2s;
+}
+.thumb li:hover
+{
+    transform: translate(-15px);
+}
+.thumb li img
+{
+    max: width 200px;
+    border: 5px solid  #8a2b2b;
+}
+.additional-content {
+    text-align: center;
+    color: aqua;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subscribeForm {
+    text-align: center;
+}
+
+    @media (max-width: 600px) {
+      section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>LIQUID SYMPHONY </h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Contact</a>
+    <a href="#">Menu</a>
+    <a href="#">About</a>
+  </nav>
+
+  <section>
+    <h2>Crafting Exquisite Moments with Fine Spirits</h2>
+    <p>Pour yourself a glass of life, sip the moments, and let the spirits of joy and laughter fill your cup.</p>
+    
+  </section>
+    <ul class="thumb">
+        <li><img src="amaretto.jpg" height="111px" width="116px" title="Amaretto"></li>
+        <li><img src="bailey.jpg" height="111px" width="116px" title="Bailey's Irish Cream"></li>
+        <li><img src="drambuie.jpg" height="111px" width="116px" title="Drambuie"></li>
+        <li><img src="grand.jpg" height="111px" width="116px" title="Grand Manier"></li>
+        <li><img src="midori.jpg" height="111px" width="116px" title="Midori"></li>
+        <li><img src="campari.jpg" height="111px" width="116px" title="Campari"></li>
+    </ul>
+    <div class="additional-content">
+       <h3>Connect With Us</h3>
+    <div class="social-icons">
+        <a href="mailto:almoetejimma@gmail.com" title="Gmail"><img src="gmail.png" height="50px" width="50px" alt="Gmail"></a>
+        <a href="https://www.facebook.com//jima.0301" title="FB"><img src="fb.png" height="50px" width="50px" alt="facebook"></a>
+        <a href="@its_jmmlyn" title="Twitter"><img src="twitter.png" height="50px" width="50px" alt="Twitter"></a>
+    </div>
+    </div>
+
+    <div class="subscribeForm">
+        <input type="email" id="email" placeholder="Review">
+        <button onclick="subscribe()">Submit Review</button>
+    </div>
+</div>
+
+<script>
+  function subscribe() {
+        var review = document.getElementById("email").value;
+        alert("Submit your review: " + review);
+    }
+    const soonLink = document.getElementById("soonLink");
+    const hiddenParagraph = document.getElementById("hiddenParagraph");
+
+
+</script>
+    
+  
+      
+
+  <footer>
+    <button>Learn More</button>
+  </footer>
+</body>
+
+</html>
